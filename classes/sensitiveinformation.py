@@ -27,3 +27,29 @@ class Patient:
             return self.__health_insurance_acct_num
         except AttributeError:
             return ""
+
+    @property
+    def full_name(self):
+        try:
+            return f"{self.first_name} {self.last_name}"
+        except AttributeError:
+            return ""
+
+    @property
+    def address(self):
+        try:
+            return self.__address
+        except AttributeError:
+            return ""
+
+    @address.setter
+    def address(self, new_address):
+        if type(new_address) is str:
+            self.__address = new_address
+        else:
+            raise TypeError('Please provide a string value for the address')
+
+# So it doesn't like me trying to set the initial properties when I'm instantiating a new object...
+katie = Patient("001-11-0101", "08/21/91", "01010101010101", "Katie", "Debalmaretti", "1200 Main St.")
+
+print(dir(katie))
