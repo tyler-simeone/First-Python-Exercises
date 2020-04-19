@@ -8,5 +8,3 @@ class City:
     # can pass in list of >= 1 building argument
     def add_building(self, *aargs):
         self.buildings.extend(aargs)
-        # for test
-        print(self.buildings)
