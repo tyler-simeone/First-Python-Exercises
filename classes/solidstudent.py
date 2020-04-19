@@ -5,6 +5,9 @@ class Student():
         self.age = 0
         self.cohort_number = 0
 
+    def __str__(self):
+        return f"{self.full_name} is {self.age} years old and is in cohort {self.cohort_number}"
+
     @property
     def first_name(self):
         try:
@@ -61,7 +64,7 @@ class Student():
         else:
             raise TypeError('Please provide an integer for the Cohort number')
 
-    # Read-only property, so not defined in __init__ method.
+    # Read-only property, so not defined in __init__ constructor method.
     @property
     def full_name(self):
         try:
@@ -74,5 +77,4 @@ rachel.first_name = "Rachel"
 rachel.last_name = "McCreary"
 rachel.age = 27
 rachel.cohort_number = 38
-
-print(rachel.full_name)
+print(rachel)
