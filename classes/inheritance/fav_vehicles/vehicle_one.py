@@ -1,6 +1,5 @@
 from vehicle import Vehicle
 
-
 # Vehicle class contains three properties that are shared among all
 # classes below, as well as one 'drive' method
 class Rivian(Vehicle):
