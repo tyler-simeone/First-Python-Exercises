@@ -6,3 +6,6 @@ class Porsche(Vehicle):
 
     def drive(self):
         print(f"The {self.color} {self.model} drives past. Vrooooom!")
+
+    def stop(self):
+        print(f"The {self.model} quickly comes to a stop thanks to powerful carbon-ceramic disc brakes.")

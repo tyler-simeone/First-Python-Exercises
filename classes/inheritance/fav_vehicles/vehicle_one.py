@@ -9,3 +9,6 @@ class Rivian(Vehicle):
 
     def drive(self):
         print(f"The {self.color} {self.model} drives past. Zoooooommm!")
+
+    def stop(self):
+        print(f"The {self.model} quickly comes to a stop thanks to advanced braking technology")
