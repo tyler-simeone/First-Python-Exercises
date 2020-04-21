@@ -8,6 +8,14 @@ rivian_pickup.battery_kwh = 180
 
 rivian_pickup.drive()
 
+ford_f150 = Ford()
+ford_f150.color = "Black"
+ford_f150.maximum_occupancy = "5"
+ford_f150.model = "Ford 150"
+ford_f150.fuel_capacity = 36
+
+ford_f150.drive()
+
 ferrari_458 = Ferrari()
 ferrari_458.color = "Dark Red"
 ferrari_458.maximum_occupancy = "2"
@@ -32,10 +40,3 @@ porsche_gt3.fuel_capacity = 17
 
 porsche_gt3.drive()
 
-ford_f150 = Ford()
-ford_f150.color = "Black"
-ford_f150.maximum_occupancy = "5"
-ford_f150.model = "Ford 150"
-ford_f150.fuel_capacity = 36
-
-ford_f150.drive()
